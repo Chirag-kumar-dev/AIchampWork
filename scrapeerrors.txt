@@ -1,0 +1,36 @@
+AttributeError                            Traceback (most recent call last)
+
+<ipython-input-45-65e3204931d8> in <module>()
+     16 soup = BeautifulSoup(html_content)
+     17 para= soup.find("article", class_="product_page")
+---> 18 para= para.find_all("p").text
+     19 product_Description.append(para)
+     20 print(product_Description)
+
+/usr/local/lib/python3.6/dist-packages/bs4/element.py in __getattr__(self, key)
+   1882     def __getattr__(self, key):
+   1883         raise AttributeError(
+-> 1884             "ResultSet object has no attribute '%s'. You're probably treating a list of items like a single item. Did you call find_all() when you meant to call find()?" % key
+   1885         )
+
+AttributeError: ResultSet object has no attribute 'text'. You're probably treating a list of items like a single item. Did you call find_all() when you meant to call find()?
+
+This error comes because my varible does'n contain text
+
+
+
+
+
+
+
+
+AttributeError                            Traceback (most recent call last)
+
+<ipython-input-86-bf68e446ab74> in <module>()
+     22   #print(html_content)
+     23   soup = BeautifulSoup(html_content)
+---> 24   para= soup.find('div',class_ = 'content').find("article", class_="product_page").find("p",class_="").text
+     25   product_Description.append(para)
+     26   #print(product_Description)
+
+AttributeError: 'NoneType' object has no attribute 'find'
