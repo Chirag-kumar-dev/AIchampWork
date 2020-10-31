@@ -19,4 +19,8 @@ So i use Resnet50 for transfer learning
     
 Cat-Dog Classification - Use https://www.kaggle.com/c/dogs-vs-cats/data as your Test data. Don’t use it for training. For the training data - you should gather the data from other sources - such as google images, bing images.
 Draw Confusion Matrix for the above task and, calculate Precision, Recall, Accuracy, Sensitivity, Specificity, True Positive Rate, False Positive Rate.
+<<<<<<< HEAD
   
+=======
+  
+>>>>>>> d2ea9924f69c37e4b3563d3b50d1d3655689c5a9
